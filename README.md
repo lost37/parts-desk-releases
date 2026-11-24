@@ -4,6 +4,26 @@
 
 **[下载 Windows 安装包](https://github.com/lost37/parts-desk-releases/releases/latest)** · [版本记录](https://github.com/lost37/parts-desk-releases/releases) · [反馈问题](https://github.com/lost37/parts-desk-releases/issues/new)
 
+## 界面演示
+
+### 器件盒
+
+按实体盒的行列查看元件。下图是一个 16 × 8 的贴片阻容演示盒。
+
+![深色主题下的 16 × 8 器件盒，标有已用格位和元件标称值](images/parts-box.png)
+
+### 智能分配
+
+为 3 种未分配元件生成建议。下图高亮推荐格位，并列出每项建议的依据，确认前可调整。
+
+![智能分配预览，标出建议格位 B02、B06 和 H02](images/smart-assignment.png)
+
+### 取料焊接
+
+选中示例 BOM 中的 100nF 电容后，取料面板用蓝色标出完美匹配格位，用黄色标出近似匹配格位。
+
+![示例焊接页中高亮完美匹配格位 F07 和近似匹配格位 F09](images/soldering-pick.png)
+
 ## 主要功能
 
 | 功能 | 用途 |
