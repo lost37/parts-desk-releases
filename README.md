@@ -1,15 +1,34 @@
 # 器件工作台 · Parts Desk
 
-Windows x64 元件管理软件。支持自定义器件盒、库存和格位管理、CSV BOM 导入、取料焊接页生成。
+面向电子工程师和硬件爱好者的 Windows 桌面工具。把元件库存、实体器件盒、BOM 采购和取料焊接放在同一个工作台里。
 
-[下载最新安装版](https://github.com/lost37/parts-desk-releases/releases/latest)
+**[下载 Windows 安装包](https://github.com/lost37/parts-desk-releases/releases/latest)** · [版本记录](https://github.com/lost37/parts-desk-releases/releases) · [反馈问题](https://github.com/lost37/parts-desk-releases/issues/new)
 
-本仓库仅用于发布安装包、更新日志和签名更新清单，不包含开发源码或个人库存。
+## 主要功能
 
-安装后可在「设置 → 软件更新」检查新版本。更新前自动备份库存，更新或卸载默认保留本机库存。
+| 功能 | 用途 |
+| --- | --- |
+| 元件库 | 记录 C 编号、型号、封装、库存和存放位置，按关键词、封装、分类或格位状态筛选。 |
+| 器件盒与智能分配 | 用自定义行列模拟实体盒。可为全部未分配元件或指定元件推荐格位，支持分区、预留和确认前调整。 |
+| BOM 入库 | 导入 CSV、XLS 或 XLSX。预览后选择仅导入信息或按数量补货，可使用阻容盒或兼容盒规则。 |
+| 采购核对 | 将原始需求 BOM 与本地库存按 C 编号比对，导出采购差额和核对明细，提醒使用后库存偏低的元件。核对过程不扣库存。 |
+| 取料焊接 | 导入嘉立创 EDA 导出的原始离线焊接 HTML，生成带格位提示的副本，可在软件内或浏览器中使用。 |
+| 原理图模块 | 从 PDF 或图片提取模块候选，本地识别后人工核对。确认结果可用于在取料焊接页按模块筛选。 |
 
-设置页还提供项目主页与提交 Issue 入口。
+## 安装与上手
 
-库存位置：%LOCALAPPDATA%/PartsDesk/library.json。
+1. 打开[最新版本](https://github.com/lost37/parts-desk-releases/releases/latest)，在 Assets 中下载 `PartsDesk-Setup-*-x64.exe` 并运行。软件支持 Windows x64，运行需要 Microsoft Edge WebView2 Runtime。
+2. 在「器件盒」新建与实体盒对应的布局，或使用默认的 16 × 8 盒。在「元件库」录入物料，也可以用「导入 BOM」批量添加。
+3. 在「元件库 → 智能分配」选择分配范围，核对建议后保存。焊接时可在「取料焊接」生成带格位提示的辅助页。
 
-首次运行需要 Microsoft Edge WebView2 Runtime。
+## 更新与库存数据
+
+- 在「设置 → 关于 → 软件更新」手动检查并安装新版，也可在「通用」开启启动时检查更新。
+- 库存保存在本机 `%LOCALAPPDATA%\PartsDesk\library.json`。软件内更新安装前会自动备份库存。也可在「设置 → 通用」手动导出或恢复 JSON 备份。
+- 简体中文为默认语言。首版英语覆盖设置、更新提示和工作台导航。插件市场目前提供预留入口。
+
+本仓库提供 Windows 安装包、更新日志和签名更新清单。
+
+## English summary
+
+Parts Desk is a Windows desktop tool for component inventory, physical tray layouts, BOM import, purchasing checks, and part picking during soldering. Download the x64 installer from [the latest GitHub release](https://github.com/lost37/parts-desk-releases/releases/latest). Simplified Chinese is the default. English is available for Settings, update prompts, and workspace navigation.
