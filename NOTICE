@@ -1,0 +1,18 @@
+器件工作台 · Parts Desk
+
+项目沿用 Apache License 2.0，全文见 LICENSE。
+
+项目沿革
+器件工作台从 ppx2013 的 component-manager（嘉立创 EDA 元件管理器）
+扩展工作演进而来。上游项目使用 Apache License 2.0。
+上游仓库：https://gitee.com/ppx2013/component-manager
+
+桌面版的主要改动包括 Windows 桌面宿主、本地库存与器件盒、智能分配、
+BOM 入库与采购核对，以及离线取料焊接与原理图模块识别。
+原有版权和归属声明在适用范围内保留。
+
+第三方组件
+安装目录中的 frontend.LICENSE.txt、NODE-LICENSE.txt、WEBVIEW2-LICENSE.txt、
+WEBVIEW2-NOTICE.txt、NETCORE-LICENSE.txt、NETCORE-THIRD-PARTY-NOTICES.txt
+和 WINDOWSDESKTOP-LICENSE.txt 记录随包分发的第三方组件许可证和声明。
+第三方组件继续适用各自的条款。

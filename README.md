@@ -49,6 +49,12 @@
 
 本仓库提供 Windows 安装包、更新日志和签名更新清单。
 
+## 许可证与致谢
+
+器件工作台沿用 [Apache License 2.0](LICENSE)。本仓库用于分发桌面安装包和文档，桌面源码目前未在此公开。
+
+项目源于 [ppx2013 的 component-manager](https://gitee.com/ppx2013/component-manager) 扩展工作。桌面版的改动和第三方声明见 [NOTICE](NOTICE)。随安装包提供的第三方组件各自适用其许可证。
+
 ## English summary
 
 Parts Desk is a Windows desktop tool for component inventory, physical tray layouts, BOM import, purchasing checks, and part picking during soldering. Download the x64 installer from [the latest GitHub release](https://github.com/lost37/parts-desk-releases/releases/latest). Simplified Chinese is the default. English is available for Settings, update prompts, and workspace navigation.
